@@ -133,9 +133,9 @@ public class daoUsuario {
             stmt.setString(1, usuario.getNombreUsuario());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("usuid");
-                String nombre = rs.getString("usunombre");
-                String contrasena = rs.getString("usucontrasena");
+                int id = rs.getInt("idUsuarios");
+                String nombre = rs.getString("Usuario");
+                String contrasena = rs.getString("Password");
 
                 //usuario = new clsUsuario();
                 usuario.setIdUsuario(id);
@@ -167,9 +167,9 @@ public class daoUsuario {
             //stmt.setString(1, usuario.getNombreUsuario());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("usuid");
-                String nombre = rs.getString("usunombre");
-                String contrasena = rs.getString("usucontrasena");
+                int id = rs.getInt("idUsuarios");
+                String nombre = rs.getString("Usuario");
+                String contrasena = rs.getString("Password");
 
                 //usuario = new clsUsuario();
                 usuario.setIdUsuario(id);
